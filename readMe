@@ -1,0 +1,26 @@
+Java Program to illustrate various scheduling algorithms. Class A1 reads the data from file provided by the user and applies scheduling algorithms to check the values such as total turnaround time, weight time for each process.
+Assumption: Input file has a maximum of 20 records
+
+public static void main(String[] args): method to accept the file name from the user and read the data from the file
+precondition: variables are declared.
+postcondition: data read from the file and trasferred to array so that it can be passed to the functions.
+
+static float[] averageFCFS = checkFCFS(i) : method to check the FCFS scheduling, it returns average turnaround time and average weight time
+precondition-data from the file is made availble to this function for the FCFS calculation
+postcondition-displays the FCFS values as asked in asssignment and returns the average turnaround time and average wait time
+
+static float[] averageSPN = checkSPN(i): method to check the SPN scheduling,it returns average turnaround time and average weight time
+precondition-data from the file is made availble to this function for the SPN calculation
+postcondition-displays the SPN values as asked in asssignment and returns the average turnaround time and average wait time
+
+static float[] averagePP = checkPP(i): method to check the PP scheduling,it returns average turnaround time and average weight time
+precondition-data from the file is made availble to this function for the PP calculation
+postcondition-displays the PP values as asked in asssignment and returns the average turnaround time and average wait time
+
+static float[] averagePRR = checkPRR(i): method to check the PRR scheduling,it returns average turnaround time and average weight time
+precondition-data from the file is made availble to this function for the PRR calculation
+postcondition-displays the PRR values as asked in asssignment and returns the average turnaround time and average wait time
+
+static printavg(averageFCFS,averageSPN,averagePP,averagePRR): method to print the average - turnaround time and wait time
+precondition-All the functions for the listed scheduling algorithms have executed and returned the average values
+postcondition-prints the average values
